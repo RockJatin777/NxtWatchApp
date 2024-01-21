@@ -120,7 +120,7 @@ class TrendingVideos extends Component {
               <Header />
               <NavigationBar />
               <TrendingContainer
-                data-testid="gaming"
+                data-testid="trending"
                 bgColor={bgColor}
                 onClick={toggleTheme}
               >
