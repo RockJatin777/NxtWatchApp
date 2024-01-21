@@ -41,7 +41,7 @@ const SavedVideos = () => (
             {savedVideos.length > 0 ? (
               <SavedVideoList>
                 {savedVideos.map(each => (
-                  <TrendingVideoCard key={each.id} videoDetails={savedVideos} />
+                  <TrendingVideoCard key={each.id} videoDetails={each} />
                 ))}
               </SavedVideoList>
             ) : (
