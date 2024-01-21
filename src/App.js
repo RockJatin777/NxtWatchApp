@@ -35,13 +35,9 @@ class App extends Component {
     const {savedVideos} = this.state
     const updateSavedVideos = savedVideos.find(each => each.id === video.id)
 
-    if (updateSavedVideos) {
-      this.setState(prev => ({
-        savedVideos: [...prev.savedVideos],
-      }))
-    } else {
+    if (updateSavedVideos === undefined) {
       this.setState({savedVideos: [...savedVideos, video]})
-    }
+    } 
   }
 
   removeSavedVideo = id => {
